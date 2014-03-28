@@ -2,10 +2,7 @@
 
 I'm setting this up to save time when I do future work.  This comes with everything mostly ready to go:
 
-    bundle
-    rails g rename_to SweetNewName
-    rm -r "vendor/plugins/Rename"
-    RAILS_ENV=test bundle exec rake spec
+    curl -L http://bit.ly/1dA3OlE > setup.sh && bash setup.sh && rm setup.sh
 
 If you are creating a MySQL DB, consider something like this (more restricted for prod, obvi):
 
