@@ -4,6 +4,7 @@ I'm setting this up to save time when I do future work.  This comes with everyth
 
 - bundle
 - rails g rename_to SweetNewName
+- rm -r "vendor/plugins/Rename"
 - RAILS_ENV=test bundle exec rake spec
 
 If you are creating a MySQL DB, consider something like this (more restricted for prod, obvi):
