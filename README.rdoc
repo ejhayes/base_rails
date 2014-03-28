@@ -2,10 +2,10 @@
 
 I'm setting this up to save time when I do future work.  This comes with everything mostly ready to go:
 
-- bundle
-- rails g rename_to SweetNewName
-- rm -r "vendor/plugins/Rename"
-- RAILS_ENV=test bundle exec rake spec
+    bundle
+    rails g rename_to SweetNewName
+    rm -r "vendor/plugins/Rename"
+    RAILS_ENV=test bundle exec rake spec
 
 If you are creating a MySQL DB, consider something like this (more restricted for prod, obvi):
 
@@ -45,7 +45,7 @@ If you are creating a MySQL DB, consider something like this (more restricted fo
 === Controllers
     
     $ rails g controller funnel show
-    
+
       create  app/controllers/funnel_controller.rb
       route  get "funnel/show"
       invoke  erb
