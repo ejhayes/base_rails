@@ -17,3 +17,50 @@ If you are creating a MySQL DB, consider something like this (more restricted fo
 == Running Tests
 
     RAILS_ENV=test bundle exec rake spec
+
+== Common generators
+
+=== Models
+  
+    $ rails g model advertisement name:string
+
+    invoke  active_record
+          create    db/migrate/20140328082755_create_advertisements.rb
+          create    app/models/advertisement.rb
+          invoke    rspec
+          create      spec/models/advertisement_spec.rb
+          invoke      factory_girl
+          create        spec/factories/advertisements.rb
+
+=== Cells
+
+    $ rails g cell advertisement show
+
+    create  app/cells/advertisement_cell.rb
+    invoke  erb
+    create    app/cells/advertisement/show.html.erb
+    invoke  rspec
+    create    spec/cells/advertisement_cell_spec.rb
+
+=== Controllers
+    
+    $ rails g controller funnel show
+    
+      create  app/controllers/funnel_controller.rb
+      route  get "funnel/show"
+      invoke  erb
+      create    app/views/funnel
+      create    app/views/funnel/show.html.erb
+      invoke  rspec
+      create    spec/controllers/funnel_controller_spec.rb
+      create    spec/views/funnel
+      create    spec/views/funnel/show.html.erb_spec.rb
+      invoke  helper
+      create    app/helpers/funnel_helper.rb
+      invoke    rspec
+      create      spec/helpers/funnel_helper_spec.rb
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/funnel.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/funnel.css.scss
